@@ -24,7 +24,7 @@ const ShoeCard = ({ shoeId, shoeData }) => {
           data-testid="shoe-card-image"
           src={shoeData.image}
           alt={shoeData.name}
-          style={{ width: "250px", height: "200px" }}
+          style={{ width: "250px", height: "200px", objectFit:"cover" }}
         />
       </div>
       <div>

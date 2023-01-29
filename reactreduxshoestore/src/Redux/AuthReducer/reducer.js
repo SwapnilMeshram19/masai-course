@@ -1,4 +1,3 @@
-import { loginSuccess } from "./action";
 import { LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS } from "./actionTypes";
 
 // NOTE: DO NOT MODIFY the intial state structure in this file.

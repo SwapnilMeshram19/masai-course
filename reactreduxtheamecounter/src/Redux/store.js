@@ -1,7 +1,8 @@
 import { legacy_createStore, applyMiddleware, combineReducers } from "redux";
-import thunk from "redux-thunk";
 import { counterReducer } from "./counterReducer";
 import { themeReducer } from "./themeReducer";
+import thunk from "redux-thunk";
+
 
 const rootreducer = combineReducers({
   counterReducer,

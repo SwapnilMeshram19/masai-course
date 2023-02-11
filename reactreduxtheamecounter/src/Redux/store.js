@@ -1,7 +1,7 @@
 import { legacy_createStore, applyMiddleware, combineReducers } from "redux";
 import { counterReducer } from "./counterReducer";
 import { themeReducer } from "./themeReducer";
-import thunk from "redux-thunk";
+
 
 
 const rootreducer = combineReducers({
@@ -9,7 +9,7 @@ const rootreducer = combineReducers({
   themeReducer,
 });
 
-const store = legacy_createStore(rootreducer, applyMiddleware(thunk));
+const store = legacy_createStore(rootreducer);
 
 export { store };
 

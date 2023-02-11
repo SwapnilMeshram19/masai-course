@@ -29,16 +29,14 @@ export default function CoffeeData() {
         ) : isError ? (
           <div>Something wrong happen...</div>
         ) : (
-          <div className="data">
-            {coffeeData &&
-              coffeeData.map((data) => (
-                <div key={data.id}>
-                  <img src={data.image} />
-                  <div className="title">{data.title}</div>
-                  <div>{data.price}</div>
-                </div>
-              ))}
-          </div>
+          coffeeData &&
+          coffeeData.map((data) => (
+            <div key={data.id}>
+              <img src={data.image} />
+              <div className="title">{data.title}</div>
+              <div>{data.price}</div>
+            </div>
+          ))
         )}
         {/* Show image, title and price  */}
       </div>

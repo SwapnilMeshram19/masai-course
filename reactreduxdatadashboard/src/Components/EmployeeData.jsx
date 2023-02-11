@@ -29,16 +29,14 @@ export default function EmployeeData() {
         ) : isError ? (
           <div>Something wrong happen...</div>
         ) : (
-          <div className="data">
-            {employeeData &&
+            employeeData &&
               employeeData.map((data) => (
                 <div key={data.id}>
                   <img src={data.image} />
                   <div className="title">{data.name}</div>
                   <div>{data.salary}</div>
                 </div>
-              ))}
-          </div>
+              ))
         )}
 
         {/* Show image name, gender, and department */}

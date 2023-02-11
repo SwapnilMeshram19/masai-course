@@ -30,16 +30,14 @@ export default function RestaurantData() {
         ) : isError ? (
           <div>Something wrong happen...</div>
         ) : (
-          <div className="data">
-            {restaurantData &&
-              restaurantData.map((data) => (
-                <div key={data.id}>
-                  <img src={data.image} />
-                  <div className="title">{data.name}</div>
-                  <div>{data.rating}</div>
-                </div>
-              ))}
-          </div>
+          restaurantData &&
+          restaurantData.map((data) => (
+            <div key={data.id}>
+              <img src={data.image} />
+              <div className="title">{data.name}</div>
+              <div>{data.rating}</div>
+            </div>
+          ))
         )}
         {/* show image, name, type, rating and number_of_votes */}
       </div>

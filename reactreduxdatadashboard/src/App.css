@@ -46,18 +46,16 @@
 
 }
 
-.coffee_data{
- text-align:center;
-}
 
-.data{
+
+.coffee_data, .employee_data,  .restaurant_data{
   display:flex;
   gap:30px;
   flex-wrap:wrap;
   justify-content:center;
   text-align:center;
 }
-.data div img{
+div img{
   width:250px
 }
 
